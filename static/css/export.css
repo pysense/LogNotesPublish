@@ -1,0 +1,13 @@
+/* 禁用块拖动（也禁用缩放）——缩放还挺有用的，先注释掉这个设置 */
+/*
+.ls-block > div > div > a:not(.block-control) { pointer-events: none; }
+*/
+
+/* 隐藏右上角相关按钮 */
+#head div.r { display: none; }
+
+/* 隐藏块小圆点右键上下文菜单 */
+#custom-context-menu { display: none; }
+
+/* 使 TODO DONE 无法点击 */
+span:is(.todo, .done) > :is(.marker-switch, input) { pointer-events: none; }
